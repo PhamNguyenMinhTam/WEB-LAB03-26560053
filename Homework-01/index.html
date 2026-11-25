@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Little Market</title>
+    <meta name="description" content="Shop electronics, fashion, and books at Little Market.">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a class="brand" href="index.html"><span class="brand-icon" aria-hidden="true">✦</span> Little Market</a>
+            <a class="cart-link" href="#cart-summary">Cart <span id="cart-count" aria-live="polite">0</span></a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero" aria-labelledby="hero-title">
+            <div>
+                <h1 id="hero-title">Little Market</h1>
+                <p>Find your next favorite in electronics, fashion, and books.</p>
+            </div>
+            <div class="hero-art" aria-hidden="true">✧ <strong>✿</strong> ✦</div>
+        </section>
+
+        <section aria-labelledby="shop-title">
+            <div class="shop-heading">
+                <h2 id="shop-title">Shop products</h2>
+                <div class="search">
+                    <span aria-hidden="true">⌕</span>
+                    <input id="search" type="search" placeholder="Search products..." aria-label="Search products">
+                </div>
+            </div>
+
+            <div class="shop-tools">
+                <div class="filters" role="group" aria-label="Filter by category">
+                    <button type="button" class="active" data-category="All" aria-pressed="true">All</button>
+                    <button type="button" data-category="Electronics" aria-pressed="false">Electronics</button>
+                    <button type="button" data-category="Fashion" aria-pressed="false">Fashion</button>
+                    <button type="button" data-category="Books" aria-pressed="false">Books</button>
+                </div>
+                <div class="cart-summary" id="cart-summary">
+                    <span>Cart total <strong id="cart-total" aria-live="polite">0 ₫</strong></span>
+                    <button id="clear-cart" type="button">Clear cart</button>
+                </div>
+            </div>
+
+            <div id="product-grid" class="product-grid"></div>
+            <p id="empty-state" class="empty-state" role="status" hidden>No products found.</p>
+        </section>
+    </main>
+
+    <footer class="container">Pham Nguyen Minh Tam <span aria-hidden="true">·</span> Student ID 26560053</footer>
+</body>
+</html>
